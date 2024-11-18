@@ -32,35 +32,11 @@ type Props = {
   onClose: () => void;
 };
 
-type BaseInfo = {
-  id: number;
-  name: string;
-  img: string;
-  types: string[];
-};
-
 type About = {
   species: string;
   height: number;
   weight: number;
   abilities: string[];
-};
-
-type Stats = {
-  hp: number;
-  attack: number;
-  defence: number;
-  spAttack: number;
-  spDefence: number;
-  speed: number;
-};
-
-type DetailData = {
-  baseInfo: BaseInfo;
-  about: About;
-  stats: Stats;
-  forms: any;
-  moves: any;
 };
 
 interface TabPanelProps {
@@ -164,13 +140,12 @@ const PokemonDetail = (props: Props) => {
         moves,
       };
 
-      console.log("detail value", data);
       setDetailValue(data);
       setLoading(false);
     }
 
     fetchDetail();
-  }, []);
+  }, [id]);
 
   // console.log(detailValue);
   if (!loading) {

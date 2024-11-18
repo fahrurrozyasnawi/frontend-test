@@ -1,4 +1,4 @@
-import { Box, Chip, Stack, Table, TableCell, TableRow } from "@mui/material";
+import { Chip, Stack } from "@mui/material";
 
 type Props = {
   data: any;

@@ -1,8 +1,6 @@
 import { CircularProgress } from "@mui/material";
 
-type Props = {};
-
-const LoadingScreen = (props: Props) => {
+const LoadingScreen = () => {
   return <CircularProgress />;
 };
 
