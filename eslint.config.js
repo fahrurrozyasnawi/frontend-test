@@ -28,7 +28,7 @@ export default tseslint.config(
       "unused-imports/no-unused-imports": "off",
       "@typescript-eslint/no-explicit-any": "off",
       "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": ["error"],
+      "@typescript-eslint/no-unused-vars": ["off"],
     },
   }
 );

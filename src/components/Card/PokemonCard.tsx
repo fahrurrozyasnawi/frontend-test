@@ -1,13 +1,5 @@
-import {
-  Box,
-  Card,
-  Chip,
-  Skeleton,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Box, Card, Chip, Skeleton, Stack, Typography } from "@mui/material";
 import { useColor } from "color-thief-react";
-import React from "react";
 
 type data = {
   id: number;
